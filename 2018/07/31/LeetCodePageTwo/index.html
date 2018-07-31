@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>LeetCodePageTwo | Lio&#39;s dream</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="350. Intersection of Two Arrays IIGiven two arrays, write a function to compute their intersection.
+Example:1Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
+Note:Each element in the result">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="LeetCodePageTwo | Lio&#39;s dream">
+    <meta name="twitter:description" content="350. Intersection of Two Arrays IIGiven two arrays, write a function to compute their intersection.
+Example:1Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
+Note:Each element in the result">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="LeetCodePageTwo | Lio&#39;s dream">
+    <meta property="og:description" content="350. Intersection of Two Arrays IIGiven two arrays, write a function to compute their intersection.
+Example:1Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
+Note:Each element in the result">
+
+    
+    <meta name="author" content="Lio">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="Lio&#39;s dream" href="/atom.xml">
+    
+
+    <link rel="canonical" href="https://github.com/zhujiaxiang/zhujiaxiang.github.io/2018/07/31/LeetCodePageTwo/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Lio&#39;s dream 的主页"><img src="/images/avatar.jpg" width="80" alt="Lio&#39;s dream logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Lio&#39;s dream">Lio&#39;s dream</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description"></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/README.md">电影</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/README.md">音乐</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/zhujiaxiang" title="GitHub" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://github.com/zhujiaxiang" title="Twitter" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-07-31T03:45:16.184Z" class="post-list__meta--date date">2018-07-31</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">LeetCodePageTwo</h1>
+  </header>
+
+  <section class="post">
+    <h3 id="350-Intersection-of-Two-Arrays-II"><a href="#350-Intersection-of-Two-Arrays-II" class="headerlink" title="350. Intersection of Two Arrays II"></a>350. Intersection of Two Arrays II</h3><p>Given two arrays, write a function to compute their intersection.</p>
+<h4 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].</span><br></pre></td></tr></table></figure>
+<h4 id="Note"><a href="#Note" class="headerlink" title="Note:"></a>Note:</h4><p>Each element in the result should appear as many times as it shows in both arrays.<br>The result can be in any order.</p>
+<h4 id="Follow-up"><a href="#Follow-up" class="headerlink" title="Follow up:"></a>Follow up:</h4><p>What if the given array is already sorted? How would you optimize your algorithm?</p>
+<p>What if nums1’s size is small compared to nums2’s size? Which algorithm is better?</p>
+<p>What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?</p>
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>求出两个数组中全部重复的元素</p>
+<h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><p>使用unordered_map 进行统计++，随后再比较–</p>
+<h4 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;int&gt; intersect(vector&lt;int&gt;&amp; nums1, vector&lt;int&gt;&amp; nums2) &#123;</span><br><span class="line">    </span><br><span class="line">    unordered_map&lt;int, int&gt; map;</span><br><span class="line">    vector&lt;int&gt; res;</span><br><span class="line">    for (int i=0; i&lt;nums1.size(); i++) &#123;</span><br><span class="line">        ++map[nums1[i]];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    for (int j = 0; j &lt; nums2.size(); j++) &#123;</span><br><span class="line">        if (--map[nums2[j]] &gt;= 0) &#123;</span><br><span class="line">            res.push_back(nums2[j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="268-Missing-Number"><a href="#268-Missing-Number" class="headerlink" title="268. Missing Number"></a>268. Missing Number</h3><p>Given an array containing n distinct numbers taken from 0, 1, 2, …, n, find the one that is missing from the array.</p>
+<h4 id="For-example"><a href="#For-example" class="headerlink" title="For example,"></a>For example,</h4><p>Given nums = [0, 1, 3] return 2.</p>
+<h4 id="Note-1"><a href="#Note-1" class="headerlink" title="Note:"></a>Note:</h4><p>Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?</p>
+<h4 id="问题-1"><a href="#问题-1" class="headerlink" title="问题"></a>问题</h4><p>给一个顺序数组，找出遗失的数字</p>
+<h4 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h4><p>通过^找出遗失的数字，多出的数字一定等于数组长度</p>
+<h4 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">    int missingNumber(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">    </span><br><span class="line">    int result = (int)nums.size();</span><br><span class="line">    int i = 0;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    for(auto num:nums)</span><br><span class="line">    &#123;</span><br><span class="line">        result ^= num;</span><br><span class="line">        result ^= i;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="447-Number-of-Boomerangs"><a href="#447-Number-of-Boomerangs" class="headerlink" title="447. Number of Boomerangs"></a>447. Number of Boomerangs</h3><p>Given n points in the plane that are all pairwise distinct, a “boomerang” is a tuple of points (i, j, k) such that the distance between i and j equals the distance between i and k (the order of the tuple matters).</p>
+<p>Find the number of boomerangs. You may assume that n will be at most 500 and coordinates of points are all in the range [-10000, 10000] (inclusive).</p>
+<h4 id="Example-1"><a href="#Example-1" class="headerlink" title="Example:"></a>Example:</h4><h4 id="Input"><a href="#Input" class="headerlink" title="Input:"></a>Input:</h4><p>[[0,0],[1,0],[2,0]]</p>
+<h4 id="Output"><a href="#Output" class="headerlink" title="Output:"></a>Output:</h4><p>2</p>
+<h4 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation:"></a>Explanation:</h4><p>The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]</p>
+<h4 id="问题-2"><a href="#问题-2" class="headerlink" title="问题"></a>问题</h4><p>给出一系列坐标，通过这些坐标问你能找出几组回旋镖数组？回旋镖数组的意思是中点到两点距离相同。</p>
+<h4 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h4><p>使用欧氏距离计算两点距离（不开方）</p>
+<p>使用unordered_map存储 距离：相同距离的边数，</p>
+<p>再使用排列组合将边数的组合数全部加起来</p>
+<h4 id="C-2"><a href="#C-2" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">    int numberOfBoomerangs(vector&lt;pair&lt;int, int&gt;&gt;&amp; points) &#123;</span><br><span class="line">    </span><br><span class="line">    int res = 0;</span><br><span class="line">    </span><br><span class="line">    for (int i = 0; i &lt; points.size(); i++) &#123;</span><br><span class="line">        </span><br><span class="line">        unordered_map&lt;long, int&gt; cnt;</span><br><span class="line">        </span><br><span class="line">        for (int j = 0; j &lt; points.size(); j++) &#123;</span><br><span class="line">            if(i == j) continue;</span><br><span class="line">            int dx = points[i].first - points[j].first;</span><br><span class="line">            int dy = points[i].second - points[j].second;</span><br><span class="line">            </span><br><span class="line">            int key = dx * dx;</span><br><span class="line">            key += dy * dy;</span><br><span class="line">            </span><br><span class="line">            ++cnt[key];</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        for (auto i : cnt) &#123;</span><br><span class="line">            res += i.second * (i.second - 1);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="541-Reverse-String-II"><a href="#541-Reverse-String-II" class="headerlink" title="541. Reverse String II"></a>541. Reverse String II</h3><p>Given a string and an integer k, you need to reverse the first k characters for every 2k characters counting from the start of the string. If there are less than k characters left, reverse all of them. If there are less than 2k but greater than or equal to k characters, then reverse the first k characters and left the other as original.</p>
+<h4 id="Example-2"><a href="#Example-2" class="headerlink" title="Example:"></a>Example:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: s = &quot;abcdefg&quot;, k = 2</span><br><span class="line">Output: &quot;bacdfeg&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="Restrictions"><a href="#Restrictions" class="headerlink" title="Restrictions:"></a>Restrictions:</h4><p>The string consists of lower English letters only.<br>Length of the given string and k will in the range [1, 10000]</p>
+<h4 id="问题-3"><a href="#问题-3" class="headerlink" title="问题"></a>问题</h4><p>给一个数组s，每隔k位翻转字符</p>
+<h4 id="C-3"><a href="#C-3" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">string reverseStr(string s, int k) &#123;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    for(int i=0;i&lt;s.size(); i += 2*k)&#123;</span><br><span class="line">        reverse(s.begin()+i,min(s.begin()+i+k,s.end()) );</span><br><span class="line">        ;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    return s;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="收获"><a href="#收获" class="headerlink" title="收获"></a>收获</h4><p>min(s.begin()+i+k,s.end())</p>
+<h3 id="551-Student-Attendance-Record-I"><a href="#551-Student-Attendance-Record-I" class="headerlink" title="551. Student Attendance Record I"></a>551. Student Attendance Record I</h3><p>You are given a string representing an attendance record for a student. The record only contains the following three characters:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&apos;A&apos; : Absent.</span><br><span class="line">&apos;L&apos; : Late.</span><br><span class="line">&apos;P&apos; : Present.</span><br><span class="line">A student could be rewarded if his attendance record doesn&apos;t contain more than one &apos;A&apos; (absent) or more than two continuous &apos;L&apos; (late).</span><br><span class="line"></span><br><span class="line">You need to return whether the student could be rewarded according to his attendance record.</span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line">Input: &quot;PPALLP&quot;</span><br><span class="line">Output: True</span><br><span class="line">Example 2:</span><br><span class="line">Input: &quot;PPALLL&quot;</span><br><span class="line">Output: False</span><br></pre></td></tr></table></figure>
+<h4 id="问题-4"><a href="#问题-4" class="headerlink" title="问题"></a>问题</h4><p>给一组数组，超过1个A或者连续2个L则输出false</p>
+<h4 id="思路-3"><a href="#思路-3" class="headerlink" title="思路"></a>思路</h4><p>使用map进行统计，遇到L则检查前两位是否是L</p>
+<h4 id="C-4"><a href="#C-4" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">bool checkRecord(string s) &#123;</span><br><span class="line">    </span><br><span class="line">    unordered_map&lt;char, int&gt; map;</span><br><span class="line">    </span><br><span class="line">    for (int i = 0; i &lt; s.size(); i++) &#123;</span><br><span class="line">        if (i&gt;1&amp;&amp;s[i]==&apos;L&apos;) &#123;</span><br><span class="line">            if (s[i-1] == &apos;L&apos;&amp;&amp;s[i-2] == &apos;L&apos;) &#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (s[i] == &apos;A&apos; &amp;&amp; ++map[s[i]]&gt;1) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    return true;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="别人写法"><a href="#别人写法" class="headerlink" title="别人写法"></a>别人写法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">bool checkRecord(string s) &#123;</span><br><span class="line">    return !regex_search(s, regex(&quot;A.*A|LLL&quot;));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="收获-1"><a href="#收获-1" class="headerlink" title="收获"></a>收获</h4><p>regex_search(s, regex(“A.*A|LLL”)) 正则表达式   </p>
+<h3 id="543-Diameter-of-Binary-Tree"><a href="#543-Diameter-of-Binary-Tree" class="headerlink" title="543. Diameter of Binary Tree"></a>543. Diameter of Binary Tree</h3><p>Given a binary tree, you need to compute the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.</p>
+<h4 id="Example-3"><a href="#Example-3" class="headerlink" title="Example:"></a>Example:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Given a binary tree </span><br><span class="line">          1</span><br><span class="line">         / \</span><br><span class="line">        2   3</span><br><span class="line">       / \     </span><br><span class="line">      4   5    </span><br><span class="line">Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].</span><br></pre></td></tr></table></figure>
+<h4 id="Note-The-length-of-path-between-two-nodes-is-represented-by-the-number-of-edges-between-them"><a href="#Note-The-length-of-path-between-two-nodes-is-represented-by-the-number-of-edges-between-them" class="headerlink" title="Note: The length of path between two nodes is represented by the number of edges between them."></a>Note: The length of path between two nodes is represented by the number of edges between them.</h4><h4 id="问题-5"><a href="#问题-5" class="headerlink" title="问题"></a>问题</h4><p>找出二叉树中任意两点的最长距离</p>
+<h4 id="思路-4"><a href="#思路-4" class="headerlink" title="思路"></a>思路</h4><p>使用DFS遍历左右子树，将两棵树的深度相加</p>
+<h4 id="C-5"><a href="#C-5" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">int maxDepth = 0;</span><br><span class="line"></span><br><span class="line">int dfs(TreeNode * root)</span><br><span class="line">&#123;</span><br><span class="line">    if (root ==NULL) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    int leftDepth = dfs(root-&gt;left);</span><br><span class="line">    int rightDepth = dfs(root-&gt;right);</span><br><span class="line">    </span><br><span class="line">    if (leftDepth + rightDepth &gt; maxDepth) &#123;</span><br><span class="line">        maxDepth = leftDepth + rightDepth;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    return max(leftDepth + 1, rightDepth + 1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int diameterOfBinaryTree(TreeNode* root) &#123;</span><br><span class="line">    dfs(root);</span><br><span class="line">    return maxDepth;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="108-Convert-Sorted-Array-to-Binary-Search-Tree"><a href="#108-Convert-Sorted-Array-to-Binary-Search-Tree" class="headerlink" title="108. Convert Sorted Array to Binary Search Tree"></a>108. Convert Sorted Array to Binary Search Tree</h3><p>Given an array where elements are sorted in ascending order, convert it to a height balanced BST.</p>
+<h4 id="问题-6"><a href="#问题-6" class="headerlink" title="问题"></a>问题</h4><p>将有序数组转化为二叉搜索树</p>
+<h4 id="思路-5"><a href="#思路-5" class="headerlink" title="思路"></a>思路</h4><p>去数组的中位数作为root，递归构建左右子树</p>
+<h4 id="C-6"><a href="#C-6" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">    TreeNode* sortedArrayToBST(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">    </span><br><span class="line">    if (nums.size() == 0) &#123;</span><br><span class="line">        return NULL;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    if (nums.size() == 1) &#123;</span><br><span class="line">        return new TreeNode(nums[0]);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int middle = (int)nums.size()/2;</span><br><span class="line">    </span><br><span class="line">    TreeNode *root = new TreeNode(nums[middle]);</span><br><span class="line">    </span><br><span class="line">    vector&lt;int&gt; leftInt(nums.begin(),nums.begin() + middle);</span><br><span class="line">    </span><br><span class="line">    vector&lt;int&gt; rightInt(nums.begin()+middle+1,nums.end());</span><br><span class="line">    </span><br><span class="line">    root-&gt;left = sortedArrayToBST(leftInt);</span><br><span class="line">    root-&gt;right = sortedArrayToBST(rightInt);</span><br><span class="line">    </span><br><span class="line">    return root;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="415-Add-Strings"><a href="#415-Add-Strings" class="headerlink" title="415. Add Strings"></a>415. Add Strings</h3><p>Given two non-negative integers num1 and num2 represented as string, return the sum of num1 and num2.</p>
+<h4 id="Note-2"><a href="#Note-2" class="headerlink" title="Note:"></a>Note:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">The length of both num1 and num2 is &lt; 5100.</span><br><span class="line">Both num1 and num2 contains only digits 0-9.</span><br><span class="line">Both num1 and num2 does not contain any leading zero.</span><br><span class="line">You must not use any built-in BigInteger library or convert the inputs to integer directly.</span><br></pre></td></tr></table></figure>
+<h4 id="问题-7"><a href="#问题-7" class="headerlink" title="问题"></a>问题</h4><p>给2个用string表示的数字，将其相加并输出，</p>
+<h4 id="思路-6"><a href="#思路-6" class="headerlink" title="思路"></a>思路</h4><p>进位（carry）累加到下一位计算,将最终结果逆序输出</p>
+<h4 id="C-7"><a href="#C-7" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">string addStrings(string num1, string num2) &#123;</span><br><span class="line">    int carry =0;</span><br><span class="line">    int i = (int)num1.size() - 1;</span><br><span class="line">    int j = (int)num2.size() - 1;</span><br><span class="line">    </span><br><span class="line">    string res = &quot;&quot;;</span><br><span class="line">    </span><br><span class="line">    while(i&gt;=0||j&gt;=0||carry)</span><br><span class="line">    &#123;</span><br><span class="line">        int sum = 0;</span><br><span class="line">        if(i&gt;=0) sum += (num1[i] - &apos;0&apos;) ; i--;</span><br><span class="line">        if(j&gt;=0) sum += (num2[j] - &apos;0&apos;) ; j--;</span><br><span class="line">        </span><br><span class="line">        sum += carry;</span><br><span class="line">        </span><br><span class="line">        carry = sum / 10;</span><br><span class="line">        sum = sum % 10;</span><br><span class="line">        </span><br><span class="line">        res = res + to_string(sum);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    reverse(res.begin(), res.end());</span><br><span class="line">    </span><br><span class="line">    return res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="405-Convert-a-Number-to-Hexadecimal"><a href="#405-Convert-a-Number-to-Hexadecimal" class="headerlink" title="405. Convert a Number to Hexadecimal"></a>405. Convert a Number to Hexadecimal</h3><p>Given an integer, write an algorithm to convert it to hexadecimal. For negative integer, two’s complement method is used.</p>
+<h4 id="Note-3"><a href="#Note-3" class="headerlink" title="Note:"></a>Note:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">All letters in hexadecimal (a-f) must be in lowercase.</span><br><span class="line">The hexadecimal string must not contain extra leading 0s. If the number is zero, it is represented by a single zero character &apos;0&apos;; otherwise, the first character in the hexadecimal string will not be the zero character.</span><br><span class="line">The given number is guaranteed to fit within the range of a 32-bit signed integer.</span><br><span class="line">You must not use any method provided by the library which converts/formats the number to hex directly.</span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input:</span><br><span class="line">26</span><br><span class="line"></span><br><span class="line">Output:</span><br><span class="line">&quot;1a&quot;</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input:</span><br><span class="line">-1</span><br><span class="line"></span><br><span class="line">Output:</span><br><span class="line">&quot;ffffffff&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="问题-8"><a href="#问题-8" class="headerlink" title="问题"></a>问题</h4><p>将数转化为16进制数</p>
+<h4 id="思路-7"><a href="#思路-7" class="headerlink" title="思路"></a>思路</h4><p>十进制&amp;15 输出的结果为对应16进制数的最后4位对应的十进制数</p>
+<h4 id="C-8"><a href="#C-8" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">string toHex(int num) &#123;</span><br><span class="line">        int count = 0;</span><br><span class="line">        if(!num) return &quot;0&quot;;</span><br><span class="line">        string result;</span><br><span class="line">        while (num &amp;&amp; count &lt; 8)</span><br><span class="line">        &#123;</span><br><span class="line">            int temp = num &amp; 15;</span><br><span class="line">            if (temp&lt;10)    result.push_back(&apos;0&apos;+ temp);</span><br><span class="line">            else result.push_back(&apos;a&apos;+temp-10);</span><br><span class="line">            num = num &gt;&gt; 4;</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        reverse(result.begin(),result.end());</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="收获-2"><a href="#收获-2" class="headerlink" title="收获"></a>收获</h4><p>num &amp; 15 转化16进制</p>
+<h3 id="121-Best-Time-to-Buy-and-Sell-Stock"><a href="#121-Best-Time-to-Buy-and-Sell-Stock" class="headerlink" title="121. Best Time to Buy and Sell Stock"></a>121. Best Time to Buy and Sell Stock</h3><p>Say you have an array for which the ith element is the price of a given stock on day i.</p>
+<p>If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Example 1:</span><br><span class="line">Input: [7, 1, 5, 3, 6, 4]</span><br><span class="line">Output: 5</span><br></pre></td></tr></table></figure>
+<p>max. difference = 6-1 = 5 (not 7-1 = 6, as selling price needs to be larger than buying price)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Example 2:</span><br><span class="line">Input: [7, 6, 4, 3, 1]</span><br><span class="line">Output: 0</span><br></pre></td></tr></table></figure>
+<p>In this case, no transaction is done, i.e. max profit = 0.</p>
+<h4 id="问题-9"><a href="#问题-9" class="headerlink" title="问题"></a>问题</h4><p>给一组数组，a[i]代表第i天的股票价格，问只能进行一次买卖的话怎么样才能获得最大收益。</p>
+<h4 id="思路-8"><a href="#思路-8" class="headerlink" title="思路"></a>思路</h4><p>每次取一个日期，遍历求出他能取得的最大收益，直到所有日期取完</p>
+<h4 id="C-9"><a href="#C-9" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">int maxProfit(vector&lt;int&gt;&amp; prices) &#123;</span><br><span class="line">    int maximum = 0;</span><br><span class="line">    for(int i = 0; i &lt; prices.size();i++)&#123;</span><br><span class="line">        int pre = prices[i];</span><br><span class="line">        </span><br><span class="line">        int j = i + 1;</span><br><span class="line">        while (j&lt;prices.size()&amp;&amp;prices[j]&gt;prices[i]) &#123;</span><br><span class="line">            maximum = max(maximum, prices[j]-pre);</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    return maximum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="202-Happy-Number"><a href="#202-Happy-Number" class="headerlink" title="202. Happy Number"></a>202. Happy Number</h3><p>Write an algorithm to determine if a number is “happy”.</p>
+<p>A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.</p>
+<p>Example: 19 is a happy number</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1^2 + 9^2 = 82</span><br><span class="line">8^2 + 2^2 = 68</span><br><span class="line">6^2 + 8^2 = 100</span><br><span class="line">1^2 + 0^2 + 0^2 = 1</span><br></pre></td></tr></table></figure>
+<h4 id="问题-10"><a href="#问题-10" class="headerlink" title="问题"></a>问题</h4><p>找出happy number</p>
+<h4 id="思路-9"><a href="#思路-9" class="headerlink" title="思路"></a>思路</h4><p>非happy number会出现循环解（听过insert进set的成功与否 来探查）</p>
+<h4 id="C-10"><a href="#C-10" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">bool isHappy(int n) &#123;</span><br><span class="line"></span><br><span class="line">    set&lt;int&gt; loopDetectSet;</span><br><span class="line">    int sum;</span><br><span class="line">    while (n!=1&amp;&amp;loopDetectSet.insert(n).second) &#123;</span><br><span class="line">         sum = 0;</span><br><span class="line">        while (n&gt;0) &#123;</span><br><span class="line">            sum = sum + (n%10) * (n%10);</span><br><span class="line">            n=n/10;</span><br><span class="line">        &#125;</span><br><span class="line">        n = sum;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    return n == 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="收获-3"><a href="#收获-3" class="headerlink" title="收获"></a>收获</h4><p>从数理角度考虑，数学归纳法？</p>
+<h3 id="326-Power-of-Three"><a href="#326-Power-of-Three" class="headerlink" title="326. Power of Three"></a>326. Power of Three</h3><p>Given an integer, write a function to determine if it is a power of three.</p>
+<p>Follow up:<br>Could you do it without using any loop / recursion?</p>
+<h4 id="问题-11"><a href="#问题-11" class="headerlink" title="问题"></a>问题</h4><p>求一个数是否是三的倍数</p>
+<h4 id="思路-10"><a href="#思路-10" class="headerlink" title="思路"></a>思路</h4><p>log10（n）/log10（3）是否为整数</p>
+<h4 id="C-11"><a href="#C-11" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">bool isPowerOfThree(int n) &#123;</span><br><span class="line">    return  fmod(log10(n)/log10(3), 1)  == 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="231-Power-of-Two"><a href="#231-Power-of-Two" class="headerlink" title="231. Power of Two"></a>231. Power of Two</h3><p>同上</p>
+<h3 id="83-Remove-Duplicates-from-Sorted-List"><a href="#83-Remove-Duplicates-from-Sorted-List" class="headerlink" title="83. Remove Duplicates from Sorted List"></a>83. Remove Duplicates from Sorted List</h3><p>Given a sorted linked list, delete all duplicates such that each element appear only once.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">For example,</span><br><span class="line">Given 1-&gt;1-&gt;2, return 1-&gt;2.</span><br><span class="line">Given 1-&gt;1-&gt;2-&gt;3-&gt;3, return 1-&gt;2-&gt;3.</span><br></pre></td></tr></table></figure>
+<h4 id="问题-12"><a href="#问题-12" class="headerlink" title="问题"></a>问题</h4><p>删除重复的结点</p>
+<h4 id="思路-11"><a href="#思路-11" class="headerlink" title="思路"></a>思路</h4><h4 id="C-12"><a href="#C-12" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">ListNode* deleteDuplicates(ListNode* head) &#123;</span><br><span class="line">    ListNode* cur = head;</span><br><span class="line">    </span><br><span class="line">    while(cur!=NULL)</span><br><span class="line">    &#123;</span><br><span class="line">        while (cur-&gt;next&amp;&amp;(cur-&gt;val == cur-&gt;next-&gt;val)) &#123;</span><br><span class="line">            cur-&gt;next = cur-&gt;next-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">            cur = cur-&gt;next;</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    return head;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="35-Search-Insert-Position"><a href="#35-Search-Insert-Position" class="headerlink" title="35. Search Insert Position"></a>35. Search Insert Position</h3><p>Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.</p>
+<p>You may assume no duplicates in the array.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Here are few examples.</span><br><span class="line">[1,3,5,6], 5 → 2</span><br><span class="line">[1,3,5,6], 2 → 1</span><br><span class="line">[1,3,5,6], 7 → 4</span><br><span class="line">[1,3,5,6], 0 → 0</span><br></pre></td></tr></table></figure>
+<h4 id="问题-13"><a href="#问题-13" class="headerlink" title="问题"></a>问题</h4><p>插入数字，返回位置</p>
+<h4 id="思路-12"><a href="#思路-12" class="headerlink" title="思路"></a>思路</h4><p>常规解法不提，提一提二分查找</p>
+<h4 id="C-13"><a href="#C-13" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">    int searchInsert(vector&lt;int&gt;&amp; nums, int target) &#123;</span><br><span class="line">    int low = 0;</span><br><span class="line">    int high = (int)nums.size() -1;</span><br><span class="line">    </span><br><span class="line">    while(low&lt;=high)&#123;</span><br><span class="line">        int mid = low + (low + high)/2;</span><br><span class="line">        if (target &lt; nums[mid]) &#123;</span><br><span class="line">            high = mid-1 ;</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            low = mid +1;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return low;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="437-Path-Sum-III"><a href="#437-Path-Sum-III" class="headerlink" title="437. Path Sum III"></a>437. Path Sum III</h3><p>You are given a binary tree in which each node contains an integer value.</p>
+<p>Find the number of paths that sum to a given value.</p>
+<p>The path does not need to start or end at the root or a leaf, but it must go downwards (traveling only from parent nodes to child nodes).</p>
+<p>The tree has no more than 1,000 nodes and the values are in the range -1,000,000 to 1,000,000.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Example:</span><br><span class="line"></span><br><span class="line">root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8</span><br><span class="line"></span><br><span class="line">      10</span><br><span class="line">     /  \</span><br><span class="line">    5   -3</span><br><span class="line">   / \    \</span><br><span class="line">  3   2   11</span><br><span class="line"> / \   \</span><br><span class="line">3  -2   1</span><br><span class="line"></span><br><span class="line">Return 3. The paths that sum to 8 are:</span><br><span class="line"></span><br><span class="line">1.  5 -&gt; 3</span><br><span class="line">2.  5 -&gt; 2 -&gt; 1</span><br><span class="line">3. -3 -&gt; 11</span><br></pre></td></tr></table></figure>
+<h4 id="问题-14"><a href="#问题-14" class="headerlink" title="问题"></a>问题</h4><p>树种结点组合成指定数字的组合数，只能由父到子</p>
+<h4 id="思路-13"><a href="#思路-13" class="headerlink" title="思路"></a>思路</h4><p>两次递归</p>
+<h4 id="C-14"><a href="#C-14" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public:</span><br><span class="line">    int pathSum(TreeNode* root, int sum) &#123;</span><br><span class="line">    </span><br><span class="line">    if(root == NULL) return 0;</span><br><span class="line">    return sumUp(root, 0, sum) + pathSum(root-&gt;left, sum) + pathSum(root-&gt;right, sum);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int sumUp(TreeNode *root,int pre,int sum)</span><br><span class="line">&#123;</span><br><span class="line">    if(root == NULL)</span><br><span class="line">    &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int current = pre + root-&gt;val;</span><br><span class="line">    return (current == sum) + sumUp(root-&gt;left, current, sum) + sumUp(root-&gt;right, current, sum);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="70-Climbing-Stairs"><a href="#70-Climbing-Stairs" class="headerlink" title="70. Climbing Stairs"></a>70. Climbing Stairs</h3><p>You are climbing a stair case. It takes n steps to reach to the top.</p>
+<p>Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?</p>
+<p>Note: Given n will be a positive integer.</p>
+<h4 id="问题-15"><a href="#问题-15" class="headerlink" title="问题"></a>问题</h4><p>爬楼梯，一次只能爬1或者2，求有多少种爬法</p>
+<h4 id="思路-14"><a href="#思路-14" class="headerlink" title="思路"></a>思路</h4><p>斐波那契数列</p>
+<h4 id="C-15"><a href="#C-15" class="headerlink" title="C++"></a>C++</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   int climbStairs(int n) &#123;</span><br><span class="line">    int a= 0,b=1;</span><br><span class="line">    while (n--) &#123;</span><br><span class="line">        b = b+a;</span><br><span class="line">        a = b-a;</span><br><span class="line">    &#125;</span><br><span class="line">    return b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="收获-4"><a href="#收获-4" class="headerlink" title="收获"></a>收获</h4><p>###</p>
+<h4 id="问题-16"><a href="#问题-16" class="headerlink" title="问题"></a>问题</h4><h4 id="思路-15"><a href="#思路-15" class="headerlink" title="思路"></a>思路</h4><h4 id="C-16"><a href="#C-16" class="headerlink" title="C++"></a>C++</h4><h4 id="收获-5"><a href="#收获-5" class="headerlink" title="收获"></a>收获</h4>
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/07/31/LeetCodePageOne/" title="LeetCodePageOne">LeetCodePageOne</a></h2>
+                <p class="excerpt">
+                
+                461. Hamming DistanceThe Hamming distance between two integers is the number of positions at which the corresponding bits are different.
+Given two int
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-07-31T03:44:12.411Z" class="post-list__meta--date date">2018-07-31</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/07/31/LeetCodePageOne/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 Lio - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
